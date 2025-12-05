@@ -66,12 +66,12 @@ El sitio está completamente optimizado para:
 ## 📞 Contacto
 
 - **Teléfono**: +34 912 345 678
-- **Email**: info@colegioelsaber.es
+- **Email**: info@colegiomendigorria.es
 - **WhatsApp**: Botón flotante en todas las páginas
 
 ## 📝 Licencia
 
-© 2024 Colegio El Saber. Todos los derechos reservados.
+© 2025 Colegio de Mendigorria. Todos los derechos reservados.
 
 ---
 
