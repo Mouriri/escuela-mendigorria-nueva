@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.activities.title">Actividades - Colegio Infantil y Primaria</title>
+    <meta name="description" content="Actividades extraescolares y eventos del colegio">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text" data-i18n="site.name">Colegio El Saber</span>
+                </div>
+
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" class="nav-link" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" class="nav-link" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" class="nav-link active"
+                                data-i18n="nav.activities">Actividades</a></li>
+                        <li><a href="zona_privada.html" class="nav-link nav-link-private" data-i18n="nav.private">Zona
+                                privada</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="eus">EUS</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                    </div>
+
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="activities.header.title">Actividades</h1>
+            <p data-i18n="activities.header.subtitle">Extraescolares, eventos y proyectos especiales</p>
+        </div>
+    </section>
+
+    <!-- Extracurricular Activities -->
+    <section class="extracurricular-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="activities.extra.title">Actividades Extraescolares</h2>
+            <p class="section-subtitle" data-i18n="activities.extra.subtitle">Amplía el aprendizaje más allá del horario
+                escolar</p>
+
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">⚽</div>
+                    <h3 data-i18n="activities.extra.sports.title">Deportes</h3>
+                    <p data-i18n="activities.extra.sports.desc">Fútbol, baloncesto, atletismo y psicomotricidad</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.sports.time">Lunes y Miércoles
+                            17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🎨</div>
+                    <h3 data-i18n="activities.extra.art.title">Arte y Manualidades</h3>
+                    <p data-i18n="activities.extra.art.desc">Pintura, dibujo, escultura y expresión artística</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.art.time">Martes 17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🎵</div>
+                    <h3 data-i18n="activities.extra.music.title">Música</h3>
+                    <p data-i18n="activities.extra.music.desc">Lenguaje musical, coro e instrumentos</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.music.time">Jueves 17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🌍</div>
+                    <h3 data-i18n="activities.extra.languages.title">Idiomas</h3>
+                    <p data-i18n="activities.extra.languages.desc">Inglés avanzado, francés y preparación de exámenes
+                    </p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.languages.time">Miércoles y Viernes
+                            17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🤖</div>
+                    <h3 data-i18n="activities.extra.robotics.title">Robótica y Programación</h3>
+                    <p data-i18n="activities.extra.robotics.desc">Scratch, LEGO Education y pensamiento computacional
+                    </p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.robotics.time">Viernes
+                            17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🎭</div>
+                    <h3 data-i18n="activities.extra.theater.title">Teatro</h3>
+                    <p data-i18n="activities.extra.theater.desc">Expresión corporal, dramatización y teatro musical</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.theater.time">Martes y Jueves
+                            17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">♟️</div>
+                    <h3 data-i18n="activities.extra.chess.title">Ajedrez</h3>
+                    <p data-i18n="activities.extra.chess.desc">Desarrollo de estrategia y concentración</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.chess.time">Lunes 17:00-18:00</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🧪</div>
+                    <h3 data-i18n="activities.extra.science.title">Ciencia Divertida</h3>
+                    <p data-i18n="activities.extra.science.desc">Experimentos y descubrimiento científico</p>
+                    <div class="activity-info">
+                        <span class="activity-time" data-i18n="activities.extra.science.time">Miércoles
+                            17:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Annual Events -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="activities.events.title">Eventos Anuales</h2>
+
+            <div class="events-timeline">
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e1.month">Septiembre</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e1.title">🎒 Inicio de Curso</h3>
+                        <p data-i18n="activities.events.e1.desc">Bienvenida a nuevos alumnos y familias</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e2.month">Octubre</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e2.title">🍂 Fiesta del Otoño</h3>
+                        <p data-i18n="activities.events.e2.desc">Celebración con actividades temáticas</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e3.month">Noviembre</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e3.title">📚 Semana del Libro</h3>
+                        <p data-i18n="activities.events.e3.desc">Cuentacuentos, teatro y fomento de la lectura</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e4.month">Diciembre</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e4.title">🎄 Festival de Navidad</h3>
+                        <p data-i18n="activities.events.e4.desc">Actuaciones, villancicos y celebración navideña</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e5.month">Febrero</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e5.title">🎭 Carnaval</h3>
+                        <p data-i18n="activities.events.e5.desc">Desfile de disfraces y fiesta temática</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e6.month">Marzo</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e6.title">🌍 Semana Cultural</h3>
+                        <p data-i18n="activities.events.e6.desc">Talleres, exposiciones y actividades culturales</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e7.month">Abril</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e7.title">🌱 Día del Medio Ambiente</h3>
+                        <p data-i18n="activities.events.e7.desc">Actividades de concienciación ecológica</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e8.month">Mayo</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e8.title">👨‍👩‍👧 Día de la Familia</h3>
+                        <p data-i18n="activities.events.e8.desc">Jornada de puertas abiertas y convivencia</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-month" data-i18n="activities.events.e9.month">Junio</div>
+                    <div class="event-content">
+                        <h3 data-i18n="activities.events.e9.title">🎓 Graduación y Fin de Curso</h3>
+                        <p data-i18n="activities.events.e9.desc">Ceremonia de graduación y festival de fin de curso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Projects -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="activities.projects.title">Proyectos Especiales</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🌳</div>
+                    <h3 data-i18n="activities.projects.p1.title">Huerto Escolar</h3>
+                    <p data-i18n="activities.projects.p1.desc">Los alumnos aprenden sobre agricultura ecológica,
+                        responsabilidad y respeto por la naturaleza cultivando verduras y plantas aromáticas.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📰</div>
+                    <h3 data-i18n="activities.projects.p2.title">Periódico Escolar</h3>
+                    <p data-i18n="activities.projects.p2.desc">Redacción, diseño y publicación de nuestro periódico
+                        trimestral con noticias, entrevistas y trabajos de los alumnos.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🎬</div>
+                    <h3 data-i18n="activities.projects.p3.title">Cine en la Escuela</h3>
+                    <p data-i18n="activities.projects.p3.desc">Proyección y análisis de películas educativas, desarrollo
+                        del pensamiento crítico y educación en valores.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🤝</div>
+                    <h3 data-i18n="activities.projects.p4.title">Solidaridad</h3>
+                    <p data-i18n="activities.projects.p4.desc">Campañas solidarias, recogida de alimentos y colaboración
+                        con ONGs para fomentar valores de ayuda y empatía.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🏃</div>
+                    <h3 data-i18n="activities.projects.p5.title">Olimpiadas Escolares</h3>
+                    <p data-i18n="activities.projects.p5.desc">Competiciones deportivas que fomentan el trabajo en
+                        equipo, el esfuerzo y los hábitos saludables.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔬</div>
+                    <h3 data-i18n="activities.projects.p6.title">Feria de Ciencias</h3>
+                    <p data-i18n="activities.projects.p6.desc">Exposición anual de proyectos científicos realizados por
+                        los alumnos, promoviendo la investigación y la experimentación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excursions -->
+    <section class="excursions-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="activities.excursions.title">Excursiones y Salidas</h2>
+            <p class="section-subtitle" data-i18n="activities.excursions.subtitle">Aprendizaje fuera del aula</p>
+
+            <div class="excursions-grid">
+                <div class="excursion-card">
+                    <div class="excursion-icon">🏛️</div>
+                    <h3 data-i18n="activities.excursions.e1.title">Museos</h3>
+                    <p data-i18n="activities.excursions.e1.desc">Visitas a museos de ciencias, arte e historia</p>
+                </div>
+                <div class="excursion-card">
+                    <div class="excursion-icon">🌲</div>
+                    <h3 data-i18n="activities.excursions.e2.title">Naturaleza</h3>
+                    <p data-i18n="activities.excursions.e2.desc">Excursiones a parques naturales y granjas escuela</p>
+                </div>
+                <div class="excursion-card">
+                    <div class="excursion-icon">🎪</div>
+                    <h3 data-i18n="activities.excursions.e3.title">Teatro y Cine</h3>
+                    <p data-i18n="activities.excursions.e3.desc">Asistencia a obras de teatro y películas educativas</p>
+                </div>
+                <div class="excursion-card">
+                    <div class="excursion-icon">🏰</div>
+                    <h3 data-i18n="activities.excursions.e4.title">Patrimonio Cultural</h3>
+                    <p data-i18n="activities.excursions.e4.desc">Visitas a monumentos y lugares históricos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="site.name">Colegio El Saber</h4>
+                    <p data-i18n="footer.desc">Educación de calidad para el futuro de tus hijos</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links.title">Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" data-i18n="nav.activities">Actividades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact.title">Contacto</h4>
+                    <p>📞 +34 912 345 678</p>
+                    <p>✉️ info@colegioelsaber.es</p>
+                    <p>📍 Madrid, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-i18n="site.name">Colegio El Saber</span>. <span
+                        data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34912345678" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

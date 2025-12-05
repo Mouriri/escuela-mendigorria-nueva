@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.private.title">Zona Privada - Colegio Infantil y Primaria</title>
+    <meta name="description" content="Acceso para alumnos y profesores">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text" data-i18n="site.name">Colegio El Saber</span>
+                </div>
+
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" class="nav-link" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" class="nav-link" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" class="nav-link" data-i18n="nav.activities">Actividades</a></li>
+                        <li><a href="zona_privada.html" class="nav-link nav-link-private active"
+                                data-i18n="nav.private">Zona privada</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="eus">EUS</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                    </div>
+
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Selection -->
+    <section class="private-zone" id="loginSelection">
+        <div class="container">
+            <h1 class="private-title" data-i18n="private.title">Zona Privada</h1>
+            <p class="private-subtitle" data-i18n="private.subtitle">Selecciona tu tipo de acceso</p>
+
+            <div class="login-options">
+                <div class="login-card" id="studentLoginCard">
+                    <div class="login-icon">👨‍🎓</div>
+                    <h2 data-i18n="private.student.title">Acceso Alumnos</h2>
+                    <p data-i18n="private.student.desc">Consulta tus notas y calificaciones</p>
+                    <button class="btn btn-primary" id="studentLoginBtn" data-i18n="private.student.btn">Iniciar sesión
+                        con Gmail</button>
+                </div>
+
+                <div class="login-card" id="teacherLoginCard">
+                    <div class="login-icon">👨‍🏫</div>
+                    <h2 data-i18n="private.teacher.title">Acceso Profesores</h2>
+                    <p data-i18n="private.teacher.desc">Gestiona las notas de tus alumnos</p>
+                    <button class="btn btn-secondary" id="teacherLoginBtn"
+                        data-i18n="private.teacher.btn">Acceder</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Dashboard -->
+    <section class="dashboard" id="studentDashboard" style="display: none;">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h1 data-i18n="private.student.dashboard.title">Panel del Alumno</h1>
+                    <p class="user-info" id="studentName">Alumno: <strong>María García López</strong></p>
+                    <p class="user-info">Curso: <strong>4º Primaria</strong></p>
+                </div>
+                <button class="btn btn-secondary" id="studentLogoutBtn" data-i18n="private.logout">Cerrar
+                    sesión</button>
+            </div>
+
+            <div class="grades-section">
+                <h2 data-i18n="private.student.grades.title">Mis Calificaciones</h2>
+
+                <div class="grades-filters">
+                    <button class="filter-btn active" data-trimester="1" data-i18n="private.student.trimester1">1º
+                        Trimestre</button>
+                    <button class="filter-btn" data-trimester="2" data-i18n="private.student.trimester2">2º
+                        Trimestre</button>
+                    <button class="filter-btn" data-trimester="3" data-i18n="private.student.trimester3">3º
+                        Trimestre</button>
+                </div>
+
+                <div class="grades-table-container">
+                    <table class="grades-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="private.student.table.subject">Asignatura</th>
+                                <th data-i18n="private.student.table.grade">Nota</th>
+                                <th data-i18n="private.student.table.comments">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="gradesTableBody">
+                            <tr>
+                                <td data-i18n="private.subjects.math">Matemáticas</td>
+                                <td><span class="grade-badge grade-excellent">9.5</span></td>
+                                <td data-i18n="private.comments.excellent">Excelente trabajo y participación</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.language">Lengua Castellana</td>
+                                <td><span class="grade-badge grade-good">8.0</span></td>
+                                <td data-i18n="private.comments.good">Buen nivel de comprensión lectora</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.english">Inglés</td>
+                                <td><span class="grade-badge grade-excellent">9.0</span></td>
+                                <td data-i18n="private.comments.progress">Gran progreso en expresión oral</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.science">Ciencias Naturales</td>
+                                <td><span class="grade-badge grade-good">8.5</span></td>
+                                <td data-i18n="private.comments.interest">Muestra gran interés por la materia</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.social">Ciencias Sociales</td>
+                                <td><span class="grade-badge grade-good">7.5</span></td>
+                                <td data-i18n="private.comments.improve">Puede mejorar en los trabajos</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.art">Educación Artística</td>
+                                <td><span class="grade-badge grade-excellent">9.5</span></td>
+                                <td data-i18n="private.comments.creative">Muy creativa y participativa</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.pe">Educación Física</td>
+                                <td><span class="grade-badge grade-good">8.0</span></td>
+                                <td data-i18n="private.comments.teamwork">Buen trabajo en equipo</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="private.subjects.music">Música</td>
+                                <td><span class="grade-badge grade-excellent">9.0</span></td>
+                                <td data-i18n="private.comments.talent">Demuestra talento musical</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grade-summary">
+                    <div class="summary-card">
+                        <div class="summary-label" data-i18n="private.student.average">Nota Media</div>
+                        <div class="summary-value">8.6</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label" data-i18n="private.student.subjects">Asignaturas</div>
+                        <div class="summary-value">8</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-label" data-i18n="private.student.status">Estado</div>
+                        <div class="summary-value" data-i18n="private.student.approved">Aprobado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Dashboard -->
+    <section class="dashboard" id="teacherDashboard" style="display: none;">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h1 data-i18n="private.teacher.dashboard.title">Panel del Profesor</h1>
+                    <p class="user-info">Profesor: <strong>Carlos Martínez</strong></p>
+                    <p class="user-info">Asignatura: <strong data-i18n="private.subjects.math">Matemáticas</strong></p>
+                </div>
+                <button class="btn btn-secondary" id="teacherLogoutBtn" data-i18n="private.logout">Cerrar
+                    sesión</button>
+            </div>
+
+            <div class="teacher-section">
+                <h2 data-i18n="private.teacher.grades.title">Gestión de Calificaciones</h2>
+
+                <div class="teacher-controls">
+                    <div class="form-group">
+                        <label for="courseSelect" data-i18n="private.teacher.course">Curso</label>
+                        <select id="courseSelect">
+                            <option>4º Primaria A</option>
+                            <option>4º Primaria B</option>
+                            <option>5º Primaria A</option>
+                            <option>5º Primaria B</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="trimesterSelect" data-i18n="private.teacher.trimester">Trimestre</label>
+                        <select id="trimesterSelect">
+                            <option data-i18n="private.student.trimester1">1º Trimestre</option>
+                            <option data-i18n="private.student.trimester2">2º Trimestre</option>
+                            <option data-i18n="private.student.trimester3">3º Trimestre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="teacher-table-container">
+                    <table class="teacher-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="private.teacher.table.student">Alumno</th>
+                                <th data-i18n="private.teacher.table.grade">Nota</th>
+                                <th data-i18n="private.teacher.table.comments">Observaciones</th>
+                                <th data-i18n="private.teacher.table.actions">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="teacherTableBody">
+                            <tr>
+                                <td>María García López</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="9.5" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Excelente trabajo y participación">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Juan Pérez Sánchez</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="7.0" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Debe esforzarse más">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ana Martín Ruiz</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="8.5" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Muy buena actitud">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carlos López Fernández</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="6.5" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Necesita refuerzo">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Laura Sánchez Díaz</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="9.0" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Excelente rendimiento">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>David Rodríguez Gómez</td>
+                                <td>
+                                    <input type="number" class="grade-input" value="7.5" min="0" max="10" step="0.5">
+                                </td>
+                                <td>
+                                    <input type="text" class="comment-input" value="Buen progreso">
+                                </td>
+                                <td>
+                                    <button class="btn-small btn-save" data-i18n="private.teacher.save">Guardar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="teacher-actions">
+                    <button class="btn btn-primary" id="saveAllGrades" data-i18n="private.teacher.saveall">Guardar Todas
+                        las Notas</button>
+                    <button class="btn btn-secondary" id="exportGrades" data-i18n="private.teacher.export">Exportar a
+                        PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="site.name">Colegio El Saber</h4>
+                    <p data-i18n="footer.desc">Educación de calidad para el futuro de tus hijos</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links.title">Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" data-i18n="nav.activities">Actividades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact.title">Contacto</h4>
+                    <p>📞 +34 912 345 678</p>
+                    <p>✉️ info@colegioelsaber.es</p>
+                    <p>📍 Madrid, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-i18n="site.name">Colegio El Saber</span>. <span
+                        data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34912345678" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

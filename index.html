@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.home.title">Inicio - Colegio Infantil y Primaria</title>
+    <meta name="description" content="Colegio de Educación Infantil y Primaria en España">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <span class="logo-text" data-i18n="site.name">Colegio El Saber</span>
+                </div>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" class="nav-link" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" class="nav-link" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" class="nav-link" data-i18n="nav.activities">Actividades</a></li>
+                        <li><a href="zona_privada.html" class="nav-link nav-link-private" data-i18n="nav.private">Zona privada</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="eus">EUS</button>
+                        <button class="lang-btn" data-lang="ar">AR</button>
+                    </div>
+                    
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="home.hero.title">Bienvenidos a nuestro colegio</h1>
+                <p class="hero-subtitle" data-i18n="home.hero.subtitle">Educación Infantil y Primaria de calidad para el futuro de tus hijos</p>
+                <div class="hero-buttons">
+                    <a href="quienes.html" class="btn btn-primary" data-i18n="home.hero.btn1">Conócenos</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="home.hero.btn2">Contacto</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="home.features.title">¿Por qué elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3 data-i18n="home.features.card1.title">Profesores cualificados</h3>
+                    <p data-i18n="home.features.card1.desc">Equipo docente con amplia experiencia y formación continua</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-i18n="home.features.card2.title">Metodología innovadora</h3>
+                    <p data-i18n="home.features.card2.desc">Aprendizaje activo y participativo adaptado a cada alumno</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3 data-i18n="home.features.card3.title">Instalaciones modernas</h3>
+                    <p data-i18n="home.features.card3.desc">Espacios amplios, seguros y equipados con tecnología</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 data-i18n="home.features.card4.title">Educación multilingüe</h3>
+                    <p data-i18n="home.features.card4.desc">Formación en varios idiomas desde edades tempranas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-content">
+                    <h2 class="section-title" data-i18n="home.info.title">Educación de calidad desde los 3 años</h2>
+                    <p data-i18n="home.info.p1">Nuestro colegio ofrece una educación integral que abarca el 2º ciclo de Educación Infantil (3-6 años) y Educación Primaria (6-12 años).</p>
+                    <p data-i18n="home.info.p2">Nos enfocamos en el desarrollo personal, social y académico de cada alumno, fomentando valores como el respeto, la responsabilidad y la creatividad.</p>
+                    <ul class="info-list">
+                        <li data-i18n="home.info.list1">✓ Atención personalizada</li>
+                        <li data-i18n="home.info.list2">✓ Actividades extraescolares variadas</li>
+                        <li data-i18n="home.info.list3">✓ Comedor escolar saludable</li>
+                        <li data-i18n="home.info.list4">✓ Comunicación constante con las familias</li>
+                    </ul>
+                </div>
+                <div class="info-image">
+                    <div class="image-placeholder">
+                        <span>🎒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="home.contact.title">Contáctanos</h2>
+            <p class="section-subtitle" data-i18n="home.contact.subtitle">Estamos aquí para resolver todas tus dudas</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-i18n="home.contact.address.title">Dirección</h4>
+                            <p>Calle Educación, 123<br>28001 Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 data-i18n="home.contact.phone.title">Teléfono</h4>
+                            <p>+34 912 345 678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4 data-i18n="home.contact.email.title">Email</h4>
+                            <p>info@colegioelsaber.es</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4 data-i18n="home.contact.hours.title">Horario</h4>
+                            <p data-i18n="home.contact.hours.desc">Lunes a Viernes: 9:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form.name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form.phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form.message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="form.submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="site.name">Colegio El Saber</h4>
+                    <p data-i18n="footer.desc">Educación de calidad para el futuro de tus hijos</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links.title">Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
+                        <li><a href="quienes.html" data-i18n="nav.about">Quiénes somos</a></li>
+                        <li><a href="escuela.html" data-i18n="nav.school">Escuela</a></li>
+                        <li><a href="actividades.html" data-i18n="nav.activities">Actividades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact.title">Contacto</h4>
+                    <p>📞 +34 912 345 678</p>
+                    <p>✉️ info@colegioelsaber.es</p>
+                    <p>📍 Madrid, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-i18n="site.name">Colegio El Saber</span>. <span data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34912345678" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
